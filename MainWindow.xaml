@@ -1,0 +1,63 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatML"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="ChatML.MainWindow"
+        mc:Ignorable="d"
+        Title="Tela de Login" Height="480" Width="414"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow" MaxWidth="414" MinWidth="414" MinHeight="480" MaxHeight="480">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0.957"/>
+            <GradientStop Color="#FFA50DD2" Offset="0.003"/>
+            <GradientStop Color="#FF2D0339" Offset="0.694"/>
+            <GradientStop Color="#FF2D0339" Offset="0.519"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Button Style="{DynamicResource RoundedButton}" Content="ACESS" HorizontalAlignment="Center" Margin="0,297,0,0" VerticalAlignment="Top" Background="Aqua" Foreground="#FF812FB7" FontSize="30" FontFamily="Arial" FontWeight="DemiBold" Width="196" Height="36" Click="btn_Acess"/>
+        <Label Content="Login" HorizontalAlignment="Center" Margin="0,62,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="60" FontWeight="ExtraBold" Background="Transparent">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0CFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <TextBox x:Name="txt_Username" HorizontalAlignment="Left" Margin="162,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontFamily="Arial" UseLayoutRounding="True" TextAlignment="Center" FontSize="28">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF8874F3" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <PasswordBox x:Name="stxt_Password" HorizontalAlignment="Left" Margin="162,229,0,0" VerticalAlignment="Top" Width="221" Height="33" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" mah:ValidationHelper.ShowValidationErrorOnMouseOver="True" Password="" PasswordChar="*" MaxLength="25" FontWeight="Bold" FontSize="28">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF8874F3" Offset="0"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="30,172,0,0" VerticalAlignment="Top" Width="114" Height="34" HorizontalContentAlignment="Right" FontFamily="Arial" FontSize="20" FontWeight="DemiBold" UseLayoutRounding="True" Foreground="White">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF927DFF" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="30,232,0,0" VerticalAlignment="Top" Width="114" Height="34" HorizontalContentAlignment="Right" FontWeight="DemiBold" FontFamily="Arial" FontSize="20" UseLayoutRounding="True" Foreground="White">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF927DFF" Offset="0"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Window>
